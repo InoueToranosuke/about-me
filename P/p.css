@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+    background-color: #b4ada9;
+}
+body {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+}
+/* ヘッダー */
+.page-hedder {
+    height: 80px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.nav-list a {
+    color: #000;
+}
+
+/* 画像 */
+.tea {
+    background-image: url(../images/cafe201261758_TP_V.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 90px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative; /* テキストを重ねるために必要 */
+}
+.text-overlay {
+    position: absolute; /* 親要素の中で絶対位置 */
+    left: 150px;
+    color: white; /* テキストの色 */
+    text-align: left;
+}
+.text-overlay h2 {
+    font-size: 5rem;
+}
+.text-overlay p {
+    font-size: 1.5rem;
+}
+
+.nan {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* フッター */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
