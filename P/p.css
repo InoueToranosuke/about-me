@@ -64,6 +64,41 @@ body {
     margin: 0 auto;
     position: relative;
 }
+/* プロフィール文 */
+.ttl {
+    font-size: 4rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+
+}
+.textbox {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    width: 70%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.textbox p {
+    border-bottom: 1px solid #ccc; /* 線の色と太さを指定 */
+    padding-bottom: 10px; /* テキストと線の間隔を調整 */
+    margin-bottom: 20px; /* 各段落の間に余白を追加 */
+    
+}
+
+
+
+.myName {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.en {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: 0.03em;
+}
 
 /* フッター */
 .footer {
