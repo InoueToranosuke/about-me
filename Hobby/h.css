@@ -226,4 +226,73 @@ body {
   .footer a:hover {
     text-decoration: underline;
   }
+
+  /* iPhone 12 Pro 対応 */
+@media only screen and (max-width: 390px) {
+  /* ヘッダー */
+  .nav-list {
+    gap: 1rem;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .page-hedder {
+      height: auto;
+      padding: 10px;
+  }
+
+  /* 画像 */
+  .pc {
+      height: 200px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  .text-overlay h2 {
+      font-size: 2rem;
+  }
+  .text-overlay p {
+      font-size: 1rem;
+  }
+
+  /* メインセクション */
+  /* 画像を統一し一行に一つずつ配置 */
+    .gameimg, .moving, .moving2, .bookimg {
+      display: flex;
+      flex-direction: column; /* 縦方向に並べる */
+      align-items: center; /* 中央揃え */
+      gap: 20px; /* 各画像間のスペース */
+      margin-bottom: 40px;
+    }
+
+    .gameimg img, .moving img, .moving2 img, .bookimg img {
+      width: 100%; /* 画像の幅を100%に設定 */
+      max-width: 740px; /* 最大幅を740pxに制限 */
+      height: auto; /* 高さを自動調整 */
+      object-fit: cover; /* 画像を指定サイズに収める */
+      border-radius: 10px; /* 画像の角を丸める */
+    }
+
+    .text-container {
+      width: 100%; /* コンテナの幅を100%に設定 */
+      max-width: 740px; /* 最大幅を740pxに制限 */
+      text-align: center; /* テキストを中央揃えにする */
+    }
+  .gametitle, .movietitle, .booktitle {
+      margin-left: 10px;
+      font-size: 1.5rem;
+  }
+  .recommendation, .recommendationbook {
+      margin-left: 10px;
+      font-size: 1.2rem;
+  }
+
+  /* フッター */
+  .footer ul {
+      flex-direction: column;
+      gap: 1rem;
+  }
+  .footer {
+      padding: 10px;
+  }
+}
+
   

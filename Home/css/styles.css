@@ -12,6 +12,7 @@ body {
   font-style: normal;
   margin: 0px;
 }
+
 /* ヘッダー */
 .page-hedder {
   height: 80px; 
@@ -25,7 +26,6 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
- 
 }
 .nav-list a {
   color: #000;
@@ -50,6 +50,7 @@ body {
   font-size: 5rem;
   margin-bottom: 1rem;
 }
+
 /* 本 */
 .book {
   background-image: url(/images/kinemaPAR513702320_TP_V.jpg);
@@ -59,7 +60,7 @@ body {
   height: 100vh;
   background-color: #2c3235;
   background-blend-mode: screen;
-  background-blend-mode:multiply ;
+  background-blend-mode: multiply;
 }
 
 /* フッター */
@@ -83,4 +84,36 @@ body {
 }
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* iPhone 12 Pro対応のレスポンシブデザイン */
+@media (max-width: 390px) {
+  .nav-list {
+      gap: 1rem;
+      font-size: 20px;
+      padding-left: 20px;
+  }
+
+  .mejor {
+      font-size: 1.8rem;
+  }
+
+  .myname {
+      font-size: 3.5rem;
+  }
+
+  .book {
+      height: auto;
+      padding: 20px 10px;
+  }
+
+  .footer {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .footer ul {
+      flex-direction: column;
+      gap: 1rem;
+  }
 }
