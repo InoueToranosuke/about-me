@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="c.css">
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <hedder>
+        <div class="page-hedder">
+            <ul class="nav-list">
+                <li><a href="/Home/index.html">Home</a></li>
+                <li><a href="/P/p.html">Profile</a></li>
+                <li><a href="/Hobby/h.html">Hobby</a></li>
+                <li><a href="/Music/m.html">Music</a></li>
+                <li><a href="/Contact/c.html">Contact</a></li>
+            </ul>
+        </div>
+    </hedder>
+
+    <main>
+        <div class="contact-container">
+            <h2>お問い合わせ</h2>
+            <form class="contact-form">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" disabled>送信</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul>
+            <li><a href="/Home/index.html">Home</a></li>
+            <li><a href="/P/p.html">Profile</a></li>
+            <li><a href="/Hobby/h.html">Hobby</a></li>
+            <li><a href="/Music/m.html">Music</a></li>
+            <li><a href="/Contact/c.html">Contact</a></li>
+        </ul>
+        <p>© 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

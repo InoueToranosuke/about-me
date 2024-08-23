@@ -121,7 +121,7 @@ body {
 
 .logo-container img.logo {
   position: absolute; /* ロゴ画像を絶対位置に配置 */
-  bottom: 10px; /* 画像の右下に配置 */
+  bottom: 80px; /* 画像の右下に配置 */
   right: 10px;
   width: 260px; /* ロゴ画像のサイズ */
   height: auto; /* 高さは自動調整 */

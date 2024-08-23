@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+    background-color: #b4ada9;
+}
+body {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0;
+}
+
+/* ヘッダー */
+.page-hedder {
+    height: 80px; 
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.nav-list a {
+    color: #000;
+}
+
+/* メインコンテンツ */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+.contact-form button:disabled {
+    background-color: #888;
+}
+
+/* フッター */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.footer a {
+    color: #fff;
+    
+}
