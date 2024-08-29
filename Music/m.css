@@ -81,6 +81,9 @@ body {
 .artist {
     text-align: center;
     margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .artist img {
@@ -113,6 +116,11 @@ body {
 .artist a:hover {
     background-color: #ddd;
     color: #000;
+}
+
+.artist img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 /* フッター */

@@ -227,6 +227,20 @@ body {
     text-decoration: underline;
   }
 
+  /* フェードインエフェクト用 */
+.text-container, .pc, .gameimg img, .moving img, .moving2 img, .bookimg img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* ホバーエフェクト用 */
+.gameimg img:hover, .moving img:hover, .moving2 img:hover, .bookimg img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
   /* iPhone 12 Pro 対応 */
 @media only screen and (max-width: 390px) {
   /* ヘッダー */

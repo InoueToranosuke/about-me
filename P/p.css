@@ -44,6 +44,9 @@ body {
     overflow: hidden;
     margin-top: 20px;
     position: relative;
+    opacity: 0; /* 初期状態は見えないようにする */
+    transform: translateY(20px); /* 下から上にフェードインさせる */
+    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 .text-overlay {
     position: absolute;
@@ -77,6 +80,9 @@ body {
     width: 70%;
     margin: 0 auto; 
     text-align: center;
+    opacity: 0; /* 初期状態は見えないようにする */
+    transform: translateY(20px); /* 下から上にフェードインさせる */
+    transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .textbox p {
@@ -89,6 +95,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 80px;
+    transition: transform 0.3s ease; /* 名前のホバーエフェクトのためのトランジション */
 }
 .en {
     display: block;
