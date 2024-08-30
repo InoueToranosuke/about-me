@@ -45,7 +45,14 @@ body {
     overflow: hidden;
     margin-top: 20px;
     position: relative; /* テキストを重ねるために必要 */
+    opacity: 0; /* 初期状態で非表示 */
+    transition: opacity 1s ease-in-out; /* フェードインのトランジション */
 }
+
+.headphone.fade-in {
+    opacity: 1; /* フェードイン後の表示状態 */
+}
+
 .text-overlay {
     position: absolute; /* 親要素の中で絶対位置 */
     left: 150px;

@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 artist.style.transform = "translateY(0)";
             }, index * 200);  // 各アーティストが少し遅れてフェードイン
         });
+
+        // 画像フェードイン
+        const headphone = document.querySelector(".headphone");
+        if (headphone) {
+            headphone.classList.add("fade-in"); // フェードインのクラスを追加
+        }
     });
 
     // 2. ヘッダーのスクロールエフェクト
